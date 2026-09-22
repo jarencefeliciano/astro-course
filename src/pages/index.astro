@@ -1,5 +1,6 @@
 ---
-import people from "../data/people.json";
+const users = await fetch("https://jsonplaceholder.typicode.com/users");
+const data = await users.json();
 ---
 
 <!DOCTYPE html>
@@ -15,8 +16,9 @@ import people from "../data/people.json";
 	<body>
 		<nav>
       <ul>
-        {people.map((person) => (
-          <li>{person.name}</li>
+        {data.map((user) => (
+          <li key={user.id}>{user.name}
+          </li>
         ))}
       </ul>
     </nav>
