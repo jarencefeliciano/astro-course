@@ -1,5 +1,5 @@
 ---
-const names = ['Astro', 'React', 'Vue', 'Svelte', 'Solid', 'Preact'];
+import people from "../data/people.json";
 ---
 
 <!DOCTYPE html>
@@ -15,8 +15,8 @@ const names = ['Astro', 'React', 'Vue', 'Svelte', 'Solid', 'Preact'];
 	<body>
 		<nav>
       <ul>
-        {names.map((name) => (
-          <li>{name}</li>
+        {people.map((person) => (
+          <li>{person.name}</li>
         ))}
       </ul>
     </nav>
