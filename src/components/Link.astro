@@ -1,5 +1,7 @@
 ---
 const { href } = Astro.props;
+
+console.log(href);
 ---
 
 <a href={href} class="text-5xl">
@@ -8,6 +10,11 @@ const { href } = Astro.props;
 
 <style>
   a {
-    color: red;
+    text-decoration: none;
+    color: inherit;
   }
 </style>
+
+<script>
+  console.log("Link component loaded");
+</script>
