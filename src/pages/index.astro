@@ -1,9 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Card from "../components/Card.astro";
+import authors from "../data/authors.json";
+console.log(authors);
 ---
 
 <BaseLayout>
-  <div>
-    <h1>Home</h1>
-  </div>
+  {authors.map((author) => (
+    <Card authors={author} />
+  ))}
 </BaseLayout>

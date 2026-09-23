@@ -1,0 +1,35 @@
+[
+  {
+    "author": {
+      "name": "John Doe",
+      "avatar": "https://example.com/avatar.jpg"
+    },
+    "title": "My First Blog Post",
+    "description": "This is a description of my first blog post.",
+    "category": "Technology",
+    "hero": "https://example.com/hero.jpg",
+    "datePosted": "2h ago"
+  },
+  {
+    "author": {
+      "name": "Jane Smith",
+      "avatar": "https://example.com/avatar2.jpg"
+    },
+    "title": "My Second Blog Post",
+    "description": "This is a description of my second blog post.",
+    "category": "Lifestyle",
+    "hero": "https://example.com/hero2.jpg",
+    "datePosted": "1d ago"
+  },
+  {
+    "author": {
+      "name": "Alice Johnson",
+      "avatar": "https://example.com/avatar3.jpg"
+    },
+    "title": "My Third Blog Post",
+    "description": "This is a description of my third blog post.",
+    "category": "Travel",
+    "hero": "https://example.com/hero3.jpg",
+    "datePosted": "3d ago"
+  }
+]
