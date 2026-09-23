@@ -1,0 +1,15 @@
+---
+import Author from "./Author.astro";
+
+const { authors } = Astro.props;
+---
+
+<article>
+  <img src={authors.avatar} alt={authors.name} />
+  <div class="content">
+    <p class="badge">{authors.category}</p>
+    <p class="title">{authors.title}</p>
+    <p class="description">{authors.description}</p>
+    <Author name={authors.name} datePosted={authors.datePosted} />
+  </div>
+</article>
