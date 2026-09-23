@@ -1,3 +1,7 @@
+---
+const { title = "Astro Course" } = Astro.props;
+---
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -6,13 +10,14 @@
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{title}</title>
 	</head>
 	<body>
     <nav>
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
       </ul>
     </nav>
     <main>
